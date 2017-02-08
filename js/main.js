@@ -36,11 +36,34 @@
 	       
 	    }
 
- //点击显示规则内容 getElementById
-
 
  window.onload=function(){
 
+//判断是否是微信浏览器
+function is_weixin() {
+    var ua = navigator.userAgent.toLowerCase();
+    if (ua.match(/MicroMessenger/i) == "micromessenger") {
+        return true;
+    } else {
+        return false;
+    }
+}
+var openInWechat = document.getElementsByClassName('openInWechat')[0];
+var swiperContainer = document.getElementsByClassName('swiper-container')[0];
+
+var isWeixin = is_weixin();
+if(!isWeixin){
+  openInWechat.style.display="block";
+  swiperContainer.style.display="none";
+  console.log("扫描二维码，在微信中打开")
+}else{
+  openInWechat.style.display="none";
+  swiperContainer.style.display="block";
+}
+
+
+
+ //点击显示规则内容 getElementById
  var ruleButton = document.getElementById('ruleButton');
  var ruleButton2 = document.getElementById('ruleButton2');
  var closeButton = document.getElementsByClassName('close')[0];
