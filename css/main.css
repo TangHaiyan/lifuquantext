@@ -1,0 +1,345 @@
+/*mainColor
+#65a8dc
+*/
+* {
+	margin: 0;
+	padding: 0;
+}
+.home{
+	/*background: green;*/
+}
+.toShare{
+	/*background: yellow;*/
+}
+html,body{
+	font-family: 'microsoft Yahei', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: 14px;
+}
+.home h1,.toShare h1{
+/*	margin: 0 auto;
+	width: 1.6rem;
+	height: 0.9rem;*/
+	margin-bottom: 0.2rem;
+	width: 100%;
+	background: #fff;
+}
+.home h1 img,.toShare h1 img{
+   margin: 0 auto;
+   display: block;
+   width: 1.6rem;
+   height: 0.9rem;
+}
+/*.home h1 .rect{
+	margin: 0 auto;
+	width: 0.25rem;
+	height: 0.3rem;
+	background: #009de2;
+}
+.home .text p{
+	width: 1.6rem;
+	height: 0.9rem;
+	text-align:justify;
+}
+.home .text p:nth-child(1){
+	font-size: 12px;
+	color: #211816;
+}
+.home .text p:nth-child(2){
+	font-size: 9px;
+	color: #2e2624;
+}
+.home .text p:nth-child(3){
+	font-size: 13px;
+	color: #211816;
+}*/
+
+.home .banner img, .toShare .shareBanner img{
+	display: block;
+	margin: 0 auto;
+    width: 100%;
+
+}
+@media screen and (max-width: 320px)  {
+  .home .banner img	,.toShare .shareBanner img{
+	height: 4.5rem;  
+	width: auto;	
+  }
+  .toShare .shareBanner img{
+	height: 5rem;  
+	width: auto;	
+  }
+
+	
+}
+.home .productIntro p:nth-child(1){
+	margin-bottom: 0.3rem;
+}
+.home .productIntro p,.shareText{
+	padding: 0 0.5rem;
+}
+.home{
+	position: relative;
+}
+footer{
+	position: absolute;
+	bottom: 0.3rem;
+	left:0;
+	right:0;
+}
+.home .nextButton{
+	margin: 0.1rem auto 0;
+	width: 1.02rem;
+	height: 0.61rem;
+	background: url(../img/icon.png) no-repeat;
+	background-position: 0 0;
+	background-size: 1.02rem auto;
+}
+.home .ruleButton{
+	padding: 0 0.5rem;
+	text-align: right;
+	font-size: 12px;
+	text-decoration: underline;
+}
+/*弹出框遮罩层*/
+ .ruleText,.prizeIntro,.leadToShareContainer,.myShareContainer{
+	position: absolute;
+	background-color: rgba(0, 0, 0, 0.6);
+	top:0;
+	bottom: 0;
+	left:0;
+	right:0;
+}
+
+.leadToShareContainer{
+	background-color: rgba(0, 0, 0, 0.8);
+}
+.ruleText .container{
+	margin: 0 0.28rem ;
+	margin-top: 8%;
+	margin-bottom: 10%;
+	padding: 0.25rem 0.25rem;
+	background: #fff;
+	font-size: 12px;
+	height: 80%;
+}
+
+@media screen and (min-width:400px) {
+   	.ruleText .container{
+   		padding: 0.4rem 0.5rem;
+   	}
+}
+@media screen and (min-width:420px) {
+   	.ruleText .container{
+   		padding: 0.6rem 0.5rem;
+   	}	
+}
+
+.ruleText .container .close,.ruleText .container .close2
+{
+    float: right;
+	width: 0.44rem;
+	height: 0.44rem;
+	background: url(../img/icon.png) no-repeat;
+	background-position: -0.27rem -1.15rem;
+	background-size: 1rem auto;	
+}
+.ruleText .ruleIntro{
+	margin-bottom: 0.1rem;
+}
+
+@media screen and (min-height:650px) {
+   	.ruleText .ruleIntro{
+	margin-bottom: 0.2rem;
+    }   	
+}
+
+.ruleText .ruleIntro h2{
+
+   color: #009de2;
+   font-size: 16px;
+}
+.ruleText .ruleIntro p{
+   color: #646464;
+}
+
+/*消失隐藏动画*/ 
+
+@keyframes fadein
+{
+from {opacity: 0}
+to {opacity: 1}
+}
+@keyframes fadeout
+{
+from {opacity: 0}
+to {opacity: 1}
+}
+.toShare{
+	position: relative;
+}
+
+.toShare .shareText p{
+	text-align: center;
+}
+.toShare .shareText p strong{
+	color: #eb8dc0;
+}
+.toShare .button {
+  margin-top: 0.15rem;
+  padding: 0 0.5rem;
+  height: 0.66rem;
+}
+.toShare .button button{
+	height: 100%;
+	width: 45%;
+	background: #009de2;
+	color: #fff;
+	border-style: none;
+	border-radius: 5px 5px;
+	font-size: 15px;
+}
+.toShare .button button:nth-child(1){
+	margin-right: 5%;
+}
+.toShare footer div{
+	padding: 0 0.5rem;
+}
+.toShare footer p:nth-child(1){
+	float: left;
+	padding-left: 0.55rem;
+	background: url(../img/icon.png) no-repeat;
+	background-position: -0.2rem -0.6rem;
+	background-size: 1rem auto;	
+}
+.toShare footer p:nth-child(2){
+	float: right;
+	text-decoration:underline;
+}
+.toShare footer p{
+  /*display: inline-block;*/
+  height: 0.55rem;
+  line-height: 0.55rem;
+  color: #646464;
+}
+
+.toShare .textContainer{
+	position: relative;
+	margin: 0.5rem auto 0;
+	background: url(../img/prize.png) no-repeat;
+	background-size: 100% 100%;
+	width: 80%;
+	height: 9.2rem;
+}
+.toShare .textContent{
+	position: absolute;
+    left: 0.5rem;
+    right: 0.5rem;
+	bottom: 0.6rem;
+	color: #fff;
+}
+
+.toShare .textContent h2{
+	font-size: 16px;
+}
+.toShare .textContent p{
+	font-size: 12px;
+}
+
+@media screen and (min-width: 400px) {
+  .toShare .textContent{
+	bottom: 1rem;
+  }
+  .toShare .textContent p{
+	font-size: 13px;
+}
+}
+
+.toShare .textContent .price{
+	margin-bottom: 0.2rem;
+	padding-bottom: 0.1rem;
+	color: #f8b4d8;
+	text-align:right;
+	font-size: 16px;
+	border-bottom: 1px dashed #fff;
+}
+
+.toShare .textContent .price strong{
+	font-size: 17px;
+	font-weight: 600;
+}
+.toShare .textContainer .close3,.toShare .close5{
+    position: absolute;
+    top:0.4rem;
+    right: 0.7rem;
+	width: 0.44rem;
+	height: 0.44rem;
+	background: url(../img/icon.png) no-repeat;
+	background-position: -0.27rem -1.65rem;
+	background-size: 1rem auto;		
+}
+.toShare .close5{
+	top: 0.2rem;
+	background: url(../img/icon4.png) no-repeat;
+	background-position: 0 0;
+	background-size: 0.44rem auto;	
+}
+
+/*分享引导*/
+.toShare .toShareImg{
+	height: 4.5rem;
+	width:95%;
+}
+.toShare .toShareImg img{
+	float: right;
+	width: 3.6rem;
+	height: 4.5rem
+}
+.toShare .leadToShareText{
+	margin-left: 20%;
+	width: 2rem;
+}
+.toShare .leadToShareText p{
+	color: #fff;
+	text-align: center;
+}
+.toShare .leadToShareText .close4{
+  margin-top: 0.25rem;
+  width: 2rem;
+  height: 0.54rem;
+  border: 1px solid #fff;
+  border-radius: 5px 5px;
+  color: #fff;
+  line-height: 0.54rem;
+  text-align: center;
+}
+
+.toShare .myShareContainer .myShareContent{
+  position: relative;
+  margin: 30% auto;
+  width: 80%;
+  height: 6.42rem;
+  background: #65a8dc;
+}
+
+.toShare .myShareContainer img{
+	display: block;
+	margin: 0 auto;
+	width: 4.1rem;
+}
+.toShare .myShareContainer .text{
+	margin: 0 auto 0.42rem;
+	width: 4.1rem;
+	text-align: center;
+	color: #fff;
+	font-size: 15px;
+	line-height: 1.5em;
+}
+.toShare .myShareContainer .text strong{
+	color: #000;
+}
+.toShare .closeContainer{
+	height: 0.66rem;
+}
+.toShare .close5{
+	right: 0.3rem;
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+	<title>理肤泉LaRochaPosay</title>
+	<link rel="stylesheet" type="text/css" href="css/form.css">
+
+</head>
+<body>
+<div class="logo">
+    <h1> 
+        <img src="img/logo.png" alt="理肤泉">
+    </h1>
+</div>
+<div class="congratulation">
+	<p>恭喜您获奖了！</p>
+	<p>请留下联系方式，我们将把奖品快递到您手中</p>
+</div>
+<form class="infro" method="post" action="/action">
+	<div>
+		<label for="name">真实姓名</label>
+		<input type="text" name="name" id="name" placeholder="输入真实姓名" required>
+	</div>
+	<div>
+		<label for="phone">手机号码</label>
+		<input type="number" name="name" id="phone" placeholder="输入手机号" required>
+	</div>	
+	<div>
+		<label for="address">地&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;址</label>
+		<div class="addressContainer">
+		<input type="text" name="procince" id="province" placeholder="省/直辖市" required>
+		<input type="text" name="city" id="city" placeholder="市/区" required>			
+		</div>
+		<div>
+		<label></label>
+		 <input type="text" name="street" id="street" placeholder="具体地址" required>		
+		</div>
+	      	
+
+	
+	</div>	
+	<div><button id="submit">确定提交</button></div>	
+</form>
+<div class="focuse">
+	<img src="img/qrcode.jpg">
+	<div class="text">
+		<p>记得关注理肤泉微信，中奖名单会在2月18日公布,我们也会通过公众微信号通知中奖用户哦，所以务必关注我们！</p>
+		<p>扫一扫，关注理肤泉官方微信</p>
+	</div>
+</div>
+<script type="text/javascript" src="js/form.js"></script>
+</body>
+</html>
